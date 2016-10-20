@@ -1,0 +1,16 @@
+<!-- List of Products -->
+<div class="thumbnail col-md-3" *ngFor="let product of products">
+	<div class="col-md-12 col-xs-12">
+				<h3>{{product.title}}</h3>
+			</div>
+	<img src={{product.img}}>
+	<div class="row">
+		<div class="col-md-6 col-xs-6">
+			<button type="button" class="btn btn-success">Buy</button>
+		</div>
+		<div class="col-md-6 col-xs-6 text-right">
+			<h4><label>${{product.price}}</label></h4>
+		</div>
+	</div>
+	
+</div>
